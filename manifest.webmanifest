@@ -1,0 +1,20 @@
+{
+  "name": "Gambit Jackpot",
+  "short_name": "Jackpot",
+  "description": "Schach mit Spielautomat, Sammelfiguren, Decks und Spezialattacken.",
+  "id": "./",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "fullscreen",
+  "display_override": ["fullscreen", "standalone"],
+  "orientation": "any",
+  "background_color": "#2b5cc4",
+  "theme_color": "#1d3f8f",
+  "lang": "de",
+  "categories": ["games", "entertainment"],
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

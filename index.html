@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <title>Gambit Jackpot</title>
+  <meta name="description" content="Schach mit Spielautomat, Sammelfiguren, Decks und Spezialattacken.">
+  <meta name="theme-color" content="#1d3f8f">
+  <!-- Als App installierbar (Android, iPhone, iPad) -->
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Jackpot">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Globale SVG-Verläufe: Cel-Shading der Teams -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <linearGradient id="gj-blue" x1="0" y1="0" x2="1" y2="0">
+        <stop offset="0" stop-color="#a9d6ff"/><stop offset=".2" stop-color="#a9d6ff"/>
+        <stop offset=".2" stop-color="#4f9cf5"/><stop offset=".62" stop-color="#4f9cf5"/>
+        <stop offset=".62" stop-color="#2c6bd1"/><stop offset="1" stop-color="#2c6bd1"/>
+      </linearGradient>
+      <linearGradient id="gj-red" x1="0" y1="0" x2="1" y2="0">
+        <stop offset="0" stop-color="#ffb8ae"/><stop offset=".2" stop-color="#ffb8ae"/>
+        <stop offset=".2" stop-color="#ff5d4f"/><stop offset=".62" stop-color="#ff5d4f"/>
+        <stop offset=".62" stop-color="#c93a30"/><stop offset="1" stop-color="#c93a30"/>
+      </linearGradient>
+    </defs>
+  </svg>
+
+  <div id="bg"></div>
+  <div id="app"></div>
+  <canvas id="fx-canvas"></canvas>
+  <div id="flash"></div>
+  <div id="banner-root"></div>
+  <div id="modal-root"></div>
+  <div id="toast-root"></div>
+
+  <script src="js/config.js"></script>
+  <script src="js/icons.js"></script>
+  <script src="js/pieces.js"></script>
+  <script src="js/engine.js"></script>
+  <script src="js/ai.js"></script>
+  <script src="js/save.js"></script>
+  <script src="js/audio.js"></script>
+  <script src="js/fx.js"></script>
+  <script src="js/ui-board.js"></script>
+  <script src="js/match.js"></script>
+  <script src="js/deck.js"></script>
+  <script src="js/slot.js"></script>
+  <script src="js/ui-screens.js"></script>
+  <script src="js/training.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
